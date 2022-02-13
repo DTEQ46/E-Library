@@ -1,0 +1,37 @@
+.container {
+  display: flex;
+  background-color: #333;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 80px;
+  right: 150px;
+  z-index: 1;
+}
+
+.containerclicked {
+  display: none;
+}
+
+.button {
+  width: 13rem;
+  padding: 8px;
+  border: none;
+  margin-top: 1.5px;
+  margin-bottom: 1.5px;
+  border-bottom: 2px solid #333;
+}
+
+.button:hover {
+  background: #00cbfe;
+  color: #fff;
+}
+
+@media (max-width: 937px) {
+  .container {
+    top: 230px;
+  }
+}

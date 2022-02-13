@@ -1,0 +1,81 @@
+.container {
+  display: flex;
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 803px;
+  left: 0px;
+  top: 95rem;
+
+  background: url(../public/4.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  background-blend-mode: multiply;
+}
+
+.h3cont {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 466px;
+  background: #00cbfed2;
+}
+
+.h3cont > h3 {
+  position: relative;
+  justify-self: flex-start;
+
+  text-align: center;
+
+  height: 5rem;
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+
+  color: #ffffff;
+}
+
+.h3cont > p {
+  position: relative;
+  height: 5rem;
+  width: 80%;
+  top: -5rem;
+  text-align: center;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  color: #ffffff;
+}
+
+.h3cont button {
+  position: relative;
+  height: 50px;
+  width: 120px;
+  background-color: #ffffff;
+  color: #00cbfe;
+  padding: 4px 2px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  top: -3rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.h3cont button:hover {
+  background-color: #00cbfe;
+  color: #fff;
+}
+
+@media (max-width: 595px) {
+  .h3cont button {
+    top: 1rem;
+  }
+}

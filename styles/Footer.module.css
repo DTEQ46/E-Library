@@ -1,0 +1,217 @@
+.major {
+  position: absolute;
+  align-items: center;
+  width: 100%;
+  height: 557px;
+  top: 2420px;
+  left: 0;
+  right: 0;
+  background: rgba(0, 203, 254, 0.1);
+}
+
+.h3cont {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100px;
+  left: 0px;
+  top: 0px;
+
+  background: transparent;
+}
+
+.h3cont > h3 {
+  position: relative;
+  width: 177px;
+  height: 67px;
+
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.5rem;
+  line-height: 67px;
+
+  color: #00cbfe;
+}
+
+.subcont {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  width: 100%;
+  height: 408px;
+  left: 0px;
+  top: 0px;
+}
+
+.social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 38.93%;
+  height: 408px;
+  left: 0px;
+  top: 0px;
+}
+
+.social > h3 {
+  position: relative;
+  height: 54px;
+
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 54px;
+
+  color: #00cbfe;
+}
+
+.social svg {
+  width: 50px;
+  height: 50px;
+  color: #00cbfe;
+}
+.social svg:hover {
+  color: #9ee3fa;
+}
+
+.message {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  width: 61.07%;
+  height: 409px;
+  right: 0px;
+  top: 0px;
+}
+
+.message > h3 {
+  position: relative;
+  height: 54px;
+
+  font-family: "Playfair Display", serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+  line-height: 54px;
+
+  color: #00cbfe;
+}
+
+.input1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.message input {
+  width: 15rem;
+  margin-right: 10px;
+  margin-bottom: 2.5rem;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #00cbfe;
+  outline: none;
+}
+.message input::placeholder {
+  color: #00cbfe;
+}
+.message button {
+  position: relative;
+  height: 50px;
+  width: 120px;
+  background-color: #ffffff;
+  color: #00cbfe;
+  padding: 4px 2px;
+  border: 2px solid #eee;
+  border-radius: 5px;
+  top: 3rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+}
+
+.message textarea {
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #00cbfe;
+  width: 31rem;
+  height: 5rem;
+  outline: none;
+}
+
+.message textarea::placeholder {
+  color: #00cbfe;
+}
+
+.message button:hover {
+  background-color: #00cbfe;
+  color: #fff;
+}
+
+@media (max-width: 853px) {
+  .social {
+    width: 20%;
+  }
+
+  .message {
+    width: 80%;
+  }
+
+  .social svg {
+    width: 30px;
+    height: 30px;
+  }
+
+  .social > h3 {
+    font-size: 1rem;
+  }
+
+  .message > h3 {
+    font-size: 1rem;
+  }
+  .message input {
+    width: 10rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .message textarea {
+    width: 21.5rem;
+  }
+  .h3cont > h3 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+}
+
+@media (max-width: 615px) {
+  .social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 408px;
+    top: 24rem;
+  }
+
+  .message {
+    width: 100%;
+    top: -15rem;
+  }
+
+  .subcont {
+    flex-direction: column;
+  }
+
+  .major {
+    height: 720px;
+  }
+}

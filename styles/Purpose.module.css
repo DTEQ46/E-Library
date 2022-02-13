@@ -1,0 +1,77 @@
+.container {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 430px;
+  left: 2rem;
+  right: 2rem;
+  top: 1000px;
+
+  background: rgba(238, 238, 238, 0.24);
+  border: 2px solid #00cbfe;
+  box-sizing: border-box;
+  box-shadow: 0px 0px 9px rgba(0, 0, 0, 0.25);
+}
+
+.p1 {
+  position: relative;
+  width: 80%;
+  height: 297px;
+  top: 2px;
+  text-align: center;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 3rem;
+  text-transform: capitalize;
+
+  color: #00cbfe;
+}
+
+.p2 {
+  position: relative;
+  width: 80%;
+  height: 54px;
+  top: -2rem;
+  text-align: center;
+
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.8rem;
+}
+
+.p2 > a {
+  text-decoration: none;
+  color: #00cbfe;
+}
+
+.p2 > a:hover {
+  color: #9ee3fa;
+}
+
+
+@media (max-width: 628px) {
+  .container {
+    height: 470px;
+  }
+  .p1 {
+    font-size: 2.5rem;
+  }
+  .p2 {
+    font-size: 1.4rem;
+    top: 5px;
+  }
+}
+
+@media (max-width: 500px) {
+  .p1 {
+    font-size: 2.2rem;
+  }
+  .p2 {
+    font-size: 1.2rem;
+  }
+}
