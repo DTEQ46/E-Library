@@ -19,15 +19,12 @@
   position: relative;
   width: 80%;
   height: 1.8rem;
-  top: 2px;
   text-align: center;
-
   font-family: Poppins;
   font-style: normal;
   font-weight: normal;
   font-size: 3rem;
   text-transform: capitalize;
-
   color: #00cbfe;
 }
 
