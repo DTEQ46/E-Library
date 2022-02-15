@@ -35,7 +35,6 @@
   position: relative;
   width: 80%;
   height: 54px;
-  top: -2rem;
   text-align: center;
 
   font-family: Poppins;
@@ -54,9 +53,6 @@
 }
 
 @media (max-width: 720px) {
-  .container {
-    height: 470px;
-  }
   .p1 {
     font-size: 1.8rem;
   }
