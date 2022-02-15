@@ -6,7 +6,7 @@ import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 function Footer() {
   return (
-    <div className={styles.major}>
+    <div className={styles.major} id="contact">
       <div className={styles.h3cont}>
         <h3>Contact</h3>
       </div>

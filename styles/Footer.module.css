@@ -191,7 +191,7 @@
   }
 }
 
-@media (max-width: 615px) {
+@media (max-width: 720px) {
   .social {
     display: flex;
     flex-direction: column;

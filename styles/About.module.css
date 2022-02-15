@@ -30,7 +30,6 @@
   justify-self: flex-start;
 
   text-align: center;
-
   height: 5rem;
   font-family: "Playfair Display", serif;
   font-style: normal;
@@ -74,7 +73,14 @@
   color: #fff;
 }
 
-@media (max-width: 595px) {
+@media (max-width: 720px) {
+  .h3cont > h3 {
+    font-size: 2rem;
+  }
+
+  .h3cont > p {
+    font-size: 1.2rem;
+  }
   .h3cont button {
     top: 1rem;
   }

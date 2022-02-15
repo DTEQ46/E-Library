@@ -3,8 +3,10 @@ import Link from "next/link";
 import { useSession, signIn, signOut } from "next-auth/react";
 import styles from "../styles/Navbar.module.css";
 import Dropdown from "./Dropdown";
+import { useRouter } from "next/router";
 
 function Navbar() {
+  const router = useRouter();
   const { data: session } = useSession();
   const [click, setClick] = useState(false);
   const [mclick, setMclick] = useState(false);
@@ -42,34 +44,37 @@ function Navbar() {
           </div>
         )}
 
-        <ul>
-          <li>
-            <Link href="/">Home</Link>
-          </li>
-          <li>
-            <Link href="#">
-              <a onClick={MenuClick}>
-                Books{" "}
-                <span>
-                  <i
-                    className={
-                      click ? "fas fa-caret-down" : "fas fa-caret-right"
-                    }
-                  />
-                </span>
-              </a>
-            </Link>
-          </li>
-
+        <div className={styles.linkCont}>
+          <button
+            className={styles.linkBtn}
+            onClick={() => {
+              router.push("/");
+            }}
+          >
+            Home
+          </button>
+          <button className={styles.linkBtn} onClick={MenuClick}>
+            Books{" "}
+            <i className={click ? "fas fa-caret-down" : "fas fa-caret-right"} />
+          </button>
+          <button
+            className={styles.linkBtn}
+            onClick={() => {
+              router.push("#about");
+            }}
+          >
+            About
+          </button>
+          <button
+            className={styles.linkBtn}
+            onClick={() => {
+              router.push("#contact");
+            }}
+          >
+            Contact
+          </button>
           {click && <Dropdown click={click} MenuClick={MenuClick} />}
-
-          <li>
-            <Link href="#about">About</Link>
-          </li>
-          <li>
-            <Link href="#">Help</Link>
-          </li>
-        </ul>
+        </div>
       </nav>
       <nav className={styles.mobileNav}>
         <div className={styles.logoImg}></div>
@@ -100,32 +105,39 @@ function Navbar() {
             {!session ? "Login" : "Logout"}
           </button>
 
-          <ul>
-            <li>
-              <Link href="/">Home</Link>
-            </li>
-            <li>
-              <Link href="#">
-                <a onClick={MenuClick}>
-                  Books
-                  <i
-                    className={
-                      click ? "fas fa-caret-down" : "fas fa-caret-right"
-                    }
-                  />
-                </a>
-              </Link>
-            </li>
-
+          <div className={styles.linkCont}>
+            <button
+              className={styles.linkBtn}
+              onClick={() => {
+                router.push("/");
+              }}
+            >
+              Home
+            </button>
+            <button className={styles.linkBtn} onClick={MenuClick}>
+              Books{" "}
+              <i
+                className={click ? "fas fa-caret-down" : "fas fa-caret-right"}
+              />
+            </button>
+            <button
+              className={styles.linkBtn}
+              onClick={() => {
+                router.push("#about");
+              }}
+            >
+              About
+            </button>
+            <button
+              className={styles.linkBtn}
+              onClick={() => {
+                router.push("#contact");
+              }}
+            >
+              Contact
+            </button>
             {click && <Dropdown click={click} MenuClick={MenuClick} />}
-
-            <li>
-              <Link href="#about">About</Link>
-            </li>
-            <li>
-              <Link href="#">Help</Link>
-            </li>
-          </ul>
+          </div>
         </div>
       )}
     </>
@@ -135,3 +147,4 @@ function Navbar() {
 export default Navbar;
 
 //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
+//https://elibrary-psi.vercel.app/api/auth/callback/google

@@ -53,25 +53,15 @@
   color: #9ee3fa;
 }
 
-
-@media (max-width: 628px) {
+@media (max-width: 720px) {
   .container {
     height: 470px;
   }
-  .p1 {
-    font-size: 2.5rem;
-  }
-  .p2 {
-    font-size: 1.4rem;
-    top: 5px;
-  }
-}
-
-@media (max-width: 500px) {
   .p1 {
     font-size: 2.2rem;
   }
   .p2 {
     font-size: 1.2rem;
+    top: 5px;
   }
 }

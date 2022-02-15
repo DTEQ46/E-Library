@@ -8,7 +8,6 @@
   height: 150px;
   position: absolute;
   top: 80px;
-  right: 150px;
   z-index: 1;
 }
 
@@ -28,10 +27,4 @@
 .button:hover {
   background: #00cbfe;
   color: #fff;
-}
-
-@media (max-width: 937px) {
-  .container {
-    top: 230px;
-  }
 }

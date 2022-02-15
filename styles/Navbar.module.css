@@ -17,6 +17,29 @@
 .mobileNav {
   display: none;
 }
+.linkCont {
+  display: flex;
+  position: absolute;
+  justify-content: space-evenly;
+}
+
+.linkBtn {
+  height: 2.5rem;
+  width: 4.5rem;
+  font-size: 0.8rem;
+  color: #00cbfe;
+  background-color: transparent;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+  margin-right: 2px;
+  transition: all 0.2s ease;
+}
+
+.linkBtn:hover {
+  color: white;
+  background-color: #00cbfe;
+}
 
 .logoImg {
   position: absolute;
@@ -24,51 +47,40 @@
   height: 78.43px;
   left: 11px;
   top: 10px;
-
   background: url(../public/1.png);
 }
 
 .h3 {
   position: absolute;
-  width: 280px;
-  height: 59px;
   left: 104px;
   top: -25px;
-
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 2.6rem;
   line-height: 3.8rem;
-
   color: #00cbfe;
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .h6 {
   position: absolute;
-  width: 89px;
-  height: 32px;
   left: 108px;
   top: 20px;
-
   font-family: "Playfair Display", serif;
   font-style: normal;
   font-weight: normal;
   font-size: 1.2rem;
   line-height: 1.8rem;
-
   color: #00cbfe;
-
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .button {
   position: relative;
-  width: 144px;
-  height: 70px;
-  left: 20rem;
-
+  width: 124px;
+  height: 55px;
+  left: 18rem;
   background: #ffffff;
   mix-blend-mode: darken;
   border: 1px solid #00cbfe;
@@ -78,8 +90,7 @@
   font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: normal;
-  font-size: 2rem;
-
+  font-size: 1.5rem;
   color: #00cbfe;
 }
 
@@ -110,45 +121,23 @@
   border-radius: 50%;
 }
 
-.nav ul {
-  display: grid;
-  grid-template-columns: repeat(4, auto);
-  grid-gap: 10px;
-  list-style: none;
-  text-align: center;
-  width: 70%;
-  justify-content: end;
-  color: #00cbfe;
-}
-
-.nav ul li {
-  display: flex;
-  align-items: center;
-  height: 80px;
-}
-
-.nav ul li a {
-  color: #00cbfe;
-  text-decoration: none;
-  padding: 0.5rem 1rem;
-}
-
 @media (max-width: 1131px) {
-  .button {
-    width: 124px;
-    height: 55px;
-    left: 18rem;
-    font-size: 1.5rem;
-  }
-
   .avatar {
-    left: 20rem;
+    left: 21rem;
   }
 }
 
 @media (max-width: 937px) {
   .nav {
     display: none;
+  }
+
+  .h3 {
+    font-size: 2.2rem;
+  }
+
+  .h6 {
+    font-size: 1rem;
   }
 
   .menuIcon {
@@ -189,36 +178,18 @@
   }
   .avatar {
     left: 0;
+    top: -5rem;
   }
 
   .button {
     left: 0;
-    top: 20px;
+    top: -2.5rem;
     width: 114px;
     height: 48px;
     font-size: 1.3rem;
   }
-  .mobileMenu ul {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-    grid-gap: 10px;
-    list-style: none;
-    text-align: center;
-    width: 70%;
-    justify-content: center;
-    margin-right: 2rem;
-    color: #00cbfe;
-  }
 
-  .mobileMenu ul li {
-    display: flex;
-    align-items: center;
-    height: 80px;
-  }
-
-  .mobileMenu ul li a {
-    color: #00cbfe;
-    text-decoration: none;
-    padding: 0.5rem 1rem;
+  .linkCont {
+    top: 12rem;
   }
 }

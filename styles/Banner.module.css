@@ -48,6 +48,18 @@
   color: #ffffff;
 }
 
+.bannerText p {
+  position: relative;
+  height: 72px;
+  top: -3rem;
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.2rem;
+  text-align: center;
+  color: #ffffff;
+}
+
 .bannerText button {
   position: relative;
   height: 50px;
