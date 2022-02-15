@@ -55,10 +55,10 @@
 
 @media (max-width: 720px) {
   .container {
-    height: 480px;
+    height: 470px;
   }
   .p1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   .p2 {
     font-size: 1rem;
