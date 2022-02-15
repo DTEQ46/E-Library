@@ -30,12 +30,16 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   width: 40%;
   height: 465px;
   right: 0;
   top: 140px;
   background: #00cbfe;
+}
+
+.positionText {
+  padding-left: 5px;
+  padding-right: 5px;
 }
 
 .bannerText h3 {

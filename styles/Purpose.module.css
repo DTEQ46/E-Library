@@ -18,7 +18,7 @@
 .p1 {
   position: relative;
   width: 80%;
-  height: 297px;
+  height: 1.8rem;
   top: 2px;
   text-align: center;
 
@@ -34,7 +34,7 @@
 .p2 {
   position: relative;
   width: 80%;
-  height: 54px;
+  height: 1.8rem;
   top: -2rem;
   text-align: center;
 
@@ -55,13 +55,15 @@
 
 @media (max-width: 720px) {
   .container {
-    height: 470px;
+    height: 480px;
   }
   .p1 {
-    font-size: 2.2rem;
+    font-size: 2rem;
+    height: 1.2rem;
   }
   .p2 {
-    font-size: 1.2rem;
+    font-size: 1rem;
+    height: 1.2rem;
     top: 5px;
   }
 }

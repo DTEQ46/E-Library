@@ -7,10 +7,12 @@ function Banner() {
     <div className={styles.major}>
       <div className={styles.bannerImg}></div>
       <div className={styles.bannerText}>
-        <h3>
-          Welcome to GSS Bukuru <br /> E-Library
-        </h3>
-        <p>Visit here often, you've got alot to explore.</p>
+        <div className={styles.positionText}>
+          <h3>
+            Welcome to GSS Bukuru <br /> E-Library
+          </h3>
+          <p>Visit here often, you've got alot to explore.</p>
+        </div>
         <button>Learn How</button>
       </div>
       <div className={styles.arrow}>
