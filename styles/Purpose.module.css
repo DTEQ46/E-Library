@@ -52,8 +52,10 @@
 @media (max-width: 720px) {
   .p1 {
     font-size: 1.8rem;
+    top: -5rem;
   }
   .p2 {
     font-size: 1rem;
+    top: 2rem;
   }
 }
