@@ -1,7 +1,13 @@
-import clientPromise from "../../lib/mongodb";
-import styles from "../../styles/category.module.css";
-import { useSession } from "next-auth/react";
+import { useState } from 'react';
+import clientPromise from '../../lib/mongodb';
+import styles from '../../styles/category.module.css';
+import { useSession } from 'next-auth/react';
+import { useRouter } from 'next/router';
+
 export default function Book({ books }) {
+  const router = useRouter();
+  const category = router.query;
+
   const { data: session } = useSession();
   return (
     <div className={styles.container}>
@@ -10,7 +16,7 @@ export default function Book({ books }) {
           <>
             <a
               target="_blank"
-              href={session ? book.bk_url : "/api/auth/callback/google"}
+              href={session ? book.bk_url : '/api/auth/callback/google'}
               rel="noopener noreferrer"
             >
               <img className={styles.img} src={book.cv_url} />
@@ -25,9 +31,9 @@ export default function Book({ books }) {
 export async function getStaticProps(context) {
   const { category } = context.params;
   const client = await clientPromise;
-  const database = client.db("e-library");
+  const database = client.db('e-library');
   const userdb = await database
-    .collection("books")
+    .collection('books')
     .find({ category })
     .project({ _id: 0 })
     .toArray();
@@ -42,16 +48,16 @@ export async function getStaticPaths() {
   return {
     paths: [
       {
-        params: { category: "csc" },
+        params: { category: 'csc' },
       },
       {
-        params: { category: "web" },
+        params: { category: 'web' },
       },
       {
-        params: { category: "elect" },
+        params: { category: 'elect' },
       },
       {
-        params: { category: "dbs" },
+        params: { category: 'dbs' },
       },
     ],
     fallback: false,

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import Link from "next/link";
-import { useSession, signIn, signOut } from "next-auth/react";
-import styles from "../styles/Navbar.module.css";
-import Dropdown from "./Dropdown";
-import { useRouter } from "next/router";
+import { useState } from 'react';
+import Link from 'next/link';
+import { useSession, signIn, signOut } from 'next-auth/react';
+import styles from '../styles/Navbar.module.css';
+import Dropdown from './Dropdown';
+import { useRouter } from 'next/router';
 
 function Navbar() {
   const router = useRouter();
@@ -36,7 +36,7 @@ function Navbar() {
           className={styles.button}
           onClick={session ? handleSignout : handleSignin}
         >
-          {!session ? "Login" : "Logout"}
+          {!session ? 'Login' : 'Logout'}
         </button>
         {session && (
           <div className={styles.avatar}>
@@ -48,19 +48,19 @@ function Navbar() {
           <button
             className={styles.linkBtn}
             onClick={() => {
-              router.push("/");
+              router.push('/');
             }}
           >
             Home
           </button>
           <button className={styles.linkBtn} onClick={MenuClick}>
-            Books{" "}
-            <i className={click ? "fas fa-caret-down" : "fas fa-caret-right"} />
+            Books{' '}
+            <i className={click ? 'fas fa-caret-down' : 'fas fa-caret-right'} />
           </button>
           <button
             className={styles.linkBtn}
             onClick={() => {
-              router.push("#about");
+              router.push('#about');
             }}
           >
             About
@@ -68,7 +68,7 @@ function Navbar() {
           <button
             className={styles.linkBtn}
             onClick={() => {
-              router.push("#contact");
+              router.push('#contact');
             }}
           >
             Contact
@@ -83,10 +83,10 @@ function Navbar() {
         <h6 className={styles.h6}>E-Library</h6>
         <div className={styles.menuIcon} onClick={handleClick}>
           <i
-            className={mclick ? "fas fa-times" : "fas fa-bars"}
+            className={mclick ? 'fas fa-times' : 'fas fa-bars'}
             style={{
-              color: "#00cbfe",
-              fontSize: "1.5rem",
+              color: '#00cbfe',
+              fontSize: '1.5rem',
             }}
           />
         </div>
@@ -102,28 +102,28 @@ function Navbar() {
             className={styles.button}
             onClick={session ? handleSignout : handleSignin}
           >
-            {!session ? "Login" : "Logout"}
+            {!session ? 'Login' : 'Logout'}
           </button>
 
           <div className={styles.linkCont}>
             <button
               className={styles.linkBtn}
               onClick={() => {
-                router.push("/");
+                router.push('/');
               }}
             >
               Home
             </button>
             <button className={styles.linkBtn} onClick={MenuClick}>
-              Books{" "}
+              Books{' '}
               <i
-                className={click ? "fas fa-caret-down" : "fas fa-caret-right"}
+                className={click ? 'fas fa-caret-down' : 'fas fa-caret-right'}
               />
             </button>
             <button
               className={styles.linkBtn}
               onClick={() => {
-                router.push("#about");
+                router.push('#about');
               }}
             >
               About
@@ -131,7 +131,7 @@ function Navbar() {
             <button
               className={styles.linkBtn}
               onClick={() => {
-                router.push("#contact");
+                router.push('#contact');
               }}
             >
               Contact
